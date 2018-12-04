@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Grid</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="principal">
+
+
+  <p padding style="text-align: center; margin-bottom: 10px;">
+   JUEGATE EL GATO OEEEEEEEEE
+   <b><p>Jugador 1: O</p></b>
+   <b><p>Jugador 2: X</p></b>
+  </p>
+  <ion-grid class="tablero">
+    <ion-row>
+      <ion-col widht-33>
+         <button id="ceroCero" (click)="valor(0,0)">{{mensajes[0][0]}}</button>
+      </ion-col>
+      <ion-col widht-33>
+          <button id="ceroUno" (click)="valor(0,1)">{{mensajes[0][1]}}</button>
+      </ion-col>
+      <ion-col widht-33>
+          <button id="ceroDos" (click)="valor(0,2)">{{mensajes[0][2]}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col widht-33>
+            <button id="unoCero" (click)="valor(1,0)">{{mensajes[1][0]}}</button>
+        </ion-col>
+        <ion-col widht-33>
+            <button id="unoUno" (click)="valor(1,1)">{{mensajes[1][1]}}</button>
+        </ion-col>
+        <ion-col widht-33>
+            <button id="unoDos" (click)="valor(1,2)">{{mensajes[1][2]}}</button>
+        </ion-col>
+      </ion-row> 
+      <ion-row>
+          <ion-col widht-33>
+              <button id="dosCero" (click)="valor(2,0)">{{mensajes[2][0]}}</button>
+          </ion-col>
+          <ion-col widht-33>
+              <button id="dosUno" (click)="valor(2,1)">{{mensajes[2][1]}}</button>
+          </ion-col>
+          <ion-col widht-33>
+              <button id="dosDos" (click)="valor(2,2)">{{mensajes[2][2]}}</button>
+          </ion-col>
+        </ion-row>     
+  </ion-grid>
+</ion-content>
